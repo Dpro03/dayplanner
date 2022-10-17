@@ -18,16 +18,16 @@ textarea {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
 }
 
 .description {
   white-space: pre-wrap;
 }
 
-.time-block {
+.hour-block {
   text-align: center;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .row {
@@ -67,11 +67,11 @@ textarea {
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  color: black;
   transition: all .3s ease-in-out;
 }
 
-#clearFieldsBtn {
+#clearBtn {
   position: absolute;
   top: 110px;
 }
