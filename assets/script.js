@@ -29,10 +29,9 @@ $(".time-div").each(function () {
 
 //Save to local storage
 $(".saveBtn").click(function (event) {
-  event.preventDefault();
   let value = $(this).siblings(".hour-block").val();
-  let time = $(this).parent().attr("id").split("-")[1];
-  localStorage.setItem(time, value);
+  let hour = $(this).parent().attr("id").split("-")[1];
+  localStorage.setItem(hour, value);
   console.log("yes");
 });
 
@@ -49,7 +48,6 @@ $("#hr-17 .hour-block").val(localStorage.getItem("17"));
 
 //Clear button function for clearing data and local storage
 $("#clearBtn").click(function (event) {
-  event.preventDefault;
   $("textArea").val("");
   localStorage.clear();
 });
