@@ -4,7 +4,7 @@ function update() {
 setInterval(update, 1000);
 
 $(document).ready(function () {
-  console.log("Ready!");
+  
 });
 
 let currentHour = moment().format("HH");
