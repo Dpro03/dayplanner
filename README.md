@@ -1,9 +1,9 @@
-As a busy professional, I need to keep order and plan multiple tasks to be scheduled during my workday.  
-This dayplanner will help me keep everything in order. 
-To use it, just pick a time-block, and enter a task due at   time, whether it is a meeting, a scheduled
+As a busy professional, I need to keep a certain order to my day. I have many tasks on my schedule every day.  
+This dayplanner will help me keep all my tasks and apointments in place. 
+To use it, just pick a time-block, and enter a task due at a specific hour, whether it is a meeting, a scheduled
 call to make, or any task that needs to be done at that time.
-To save this task, just hit the cooresponding cloud to the right of your text.  This will save to local storage,
-that is, storge on your computer.  Don't worry!  The space it takes up is miniscule!
+To save this task, just hit the corresponding cloud to the right of your text.  This will save to local storage,
+that is, storage on your computer.  Don't worry!  The space it takes up is miniscule!
 Here are the acceptance criteria of my day planner.
 
 GIVEN I am using a daily planner to create a schedule
