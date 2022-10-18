@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1;
 }
 
@@ -73,5 +73,15 @@ textarea {
 
 #clearBtn {
   position: absolute;
-  top: 110px;
+  top: 7em;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    min-width: 650px;
+  }
+
+  .jumbotron-fluid {
+    min-width: 650px;
+  }
 }
