@@ -8,6 +8,17 @@ $(document).ready(function () {});
 
 let currentTime = dayjs().format("HH");
 
+//Retrieve from local storage
+$("#hr-09 .hour-block").val(localStorage.getItem("09"));
+$("#hr-10 .hour-block").val(localStorage.getItem("10"));
+$("#hr-11 .hour-block").val(localStorage.getItem("11"));
+$("#hr-12 .hour-block").val(localStorage.getItem("12"));
+$("#hr-13 .hour-block").val(localStorage.getItem("13"));
+$("#hr-14 .hour-block").val(localStorage.getItem("14"));
+$("#hr-15 .hour-block").val(localStorage.getItem("15"));
+$("#hr-16 .hour-block").val(localStorage.getItem("16"));
+$("#hr-17 .hour-block").val(localStorage.getItem("17"));
+
 //allow colors to reflect relative time blocks
 $(".time-div").each(function () {
   let timeDiv = $(this).attr("id").split("-")[1];
@@ -28,25 +39,14 @@ $(".time-div").each(function () {
 });
 
 //Save to local storage
-$(".saveBtn").click(function (event) {
+$(".saveBtn").click(function () {
   let value = $(this).siblings(".hour-block").val();
   let hour = $(this).parent().attr("id").split("-")[1];
   localStorage.setItem(hour, value);
   console.log("yes");
 });
 
-//Retrieve from local storage
-$("#hr-09 .hour-block").val(localStorage.getItem("09"));
-$("#hr-10 .hour-block").val(localStorage.getItem("10"));
-$("#hr-11 .hour-block").val(localStorage.getItem("11"));
-$("#hr-12 .hour-block").val(localStorage.getItem("12"));
-$("#hr-13 .hour-block").val(localStorage.getItem("13"));
-$("#hr-14 .hour-block").val(localStorage.getItem("14"));
-$("#hr-15 .hour-block").val(localStorage.getItem("15"));
-$("#hr-16 .hour-block").val(localStorage.getItem("16"));
-$("#hr-17 .hour-block").val(localStorage.getItem("17"));
-
-//Clear button function for clearing data and local storage
+//clear button function for clearing data and local storage
 $("#clearBtn").click(function (event) {
   $("textArea").val("");
   localStorage.clear();
