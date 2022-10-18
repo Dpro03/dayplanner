@@ -47,7 +47,7 @@ $(".saveBtn").click(function () {
 });
 
 //clear button function for clearing data and local storage
-$("#clearBtn").click(function (event) {
+$("#clearBtn").click(function () {
   $("textArea").val("");
   localStorage.clear();
 });
